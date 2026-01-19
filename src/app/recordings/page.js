@@ -133,7 +133,7 @@ export default function Recordings() {
       <div className="min-h-screen bg-[#f9f8f6] py-16 px-4 sm:px-6 lg:px-8 font-sans scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 pt-8">
             <div className="flex justify-center mb-6">
               <div className="bg-white p-4 rounded-full shadow-sm">
                 <Volume2 size={32} className="text-gray-700" />
