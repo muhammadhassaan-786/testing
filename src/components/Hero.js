@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full min-h-screen bg-gradient-to-b from-[#f5f1ed] to-[#f9f7f4] flex flex-col items-center justify-center px-6 py-12 mt-20 scroll-mt-20">
+    <section id="hero" className="w-full min-h-screen bg-gradient-to-b from-[#f5f1ed] to-[#f9f7f4] flex flex-col items-center justify-center px-6 py-12 scroll-mt-20 pt-32">
       {/* Bismillah */}
       <div className="mb-8 text-center">
         <p className="text-[#8b7d6b] text-xl font-normal tracking-wide">بسم الله الرحمن الرحيم</p>

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Navbar() {
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -20,8 +22,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
         {/* Logo and Title */}
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-            <span className="text-xl font-bold text-gray-700">د</span>
+          <div className="w-14 h-14 relative">
+            <Image 
+              src="/logo.jpg" 
+              alt="دارالایمان والتقویٰ" 
+              fill
+              className="object-cover rounded-full"
+              priority
+            />
           </div>
           <div className="text-right">
             <h1 className="text-lg font-bold text-gray-900">دارالایمان والتقویٰ</h1>

@@ -130,7 +130,7 @@ export default function Recordings() {
   return (
     <main className="w-full" dir="rtl">
       <Navbar />
-      <div className="min-h-screen bg-[#f9f8f6] py-16 px-4 sm:px-6 lg:px-8 font-sans" style={{ fontFamily: 'var(--font-noto-naskh-arabic)' }}>
+      <div className="min-h-screen bg-[#f9f8f6] py-16 px-4 sm:px-6 lg:px-8 font-sans scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12">
