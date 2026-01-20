@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-[#FAF9F6] py-20 px-6 font-sans scroll-mt-20" dir="rtl">
+    <div id="contact" className="w-full bg-white py-20 px-6 font-sans scroll-mt-20" dir="rtl">
       
       <div className="max-w-6xl mx-auto">
         
@@ -21,7 +21,7 @@ const Contact = () => {
 
             <div className="space-y-8">
               {/* Account Title Row */}
-              <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+              <div className="flex justify-between items-start pb-4 border-b border-gray-100">
                 <span className="text-gray-500 text-sm font-serif">اکاؤنٹ ہولڈر</span>
                 <span className="text-gray-900 font-semibold text-lg">Muhammad Jafar</span>
               </div>
@@ -29,7 +29,7 @@ const Contact = () => {
               {/* Bank Name Row */}
               <div className="flex justify-between items-start pb-4 border-b border-gray-100">
                 <span className="text-gray-500 text-sm font-serif">بینک</span>
-                <span className="text-gray-900 font-semibold text-lg w-1/2">Meezan Bank, Doaba Branch</span>
+                <span className="text-gray-900 font-semibold text-lg">Meezan Bank, Doaba Branch</span>
               </div>
 
               {/* IBAN Row */}
@@ -48,7 +48,7 @@ const Contact = () => {
           </div>
 
           {/* LEFT COLUMN: Contact Details - appears second in RTL */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10" dir="ltr">
             
             {/* Address */}
             <div className="flex items-start gap-6 justify-start">
@@ -58,7 +58,7 @@ const Contact = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                 </svg>
               </div>
-              <div className="text-right">
+              <div className="text-right" dir="rtl">
                 <h3 className="text-[#2d1b0e] font-bold text-lg font-serif mb-1">مرکز خانقاہ دارالایمان والتقویٰ</h3>
                 <p className="text-gray-600 font-serif">کربوغہ شریف، پاکستان</p>
               </div>
