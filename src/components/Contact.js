@@ -84,6 +84,7 @@ const Contact = () => {
                 href="https://www.facebook.com/markazdaruleman"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
                 className="w-12 h-12 rounded-full bg-[#F0EBE0] flex items-center justify-center hover:bg-gray-200 transition"
               >
                 <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-gray-800">
@@ -95,6 +96,7 @@ const Contact = () => {
                 href="https://www.youtube.com/@markazdarulemanofficial"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our YouTube channel"
                 className="w-12 h-12 rounded-full bg-[#F0EBE0] flex items-center justify-center hover:bg-gray-200 transition"
               >
                 <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-gray-800">
