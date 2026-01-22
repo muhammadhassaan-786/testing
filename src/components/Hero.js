@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Hero() {
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -27,10 +29,12 @@ export default function Hero() {
 
       {/* Buttons */}
       <div className="flex gap-6 items-center justify-center flex-wrap">
-        {/* Primary Button */}
-        <button onClick={() => handleScroll('about')} className="px-8 py-3 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-900 transition-colors duration-300">
-          تعارف پڑھیں
-        </button>
+        {/* Primary Button - تعارف */}
+        <Link href="/about">
+          <button className="px-8 py-3 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-900 transition-colors duration-300">
+            تعارف
+          </button>
+        </Link>
 
         {/* Secondary Button */}
         <button onClick={() => handleScroll('contact')} className="px-8 py-3 bg-white text-black border-2 border-gray-400 rounded-full font-semibold text-lg hover:bg-gray-50 transition-colors duration-300">
