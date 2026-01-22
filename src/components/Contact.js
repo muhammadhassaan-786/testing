@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -79,6 +80,16 @@ const Contact = () => {
 
             {/* Social Icons */}
             <div className="flex justify-start gap-4 pt-4">
+              {/* WhatsApp */}
+              <a 
+                href="https://api.whatsapp.com/send/?phone=923280899651&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contact us on WhatsApp"
+                className="w-12 h-12 rounded-full bg-[#F0EBE0] flex items-center justify-center hover:bg-gray-200 transition"
+              >
+                <FaWhatsapp className="w-6 h-6 text-gray-800" />
+              </a>
               {/* Facebook */}
               <a 
                 href="https://www.facebook.com/markazdaruleman"
@@ -87,9 +98,7 @@ const Contact = () => {
                 aria-label="Visit our Facebook page"
                 className="w-12 h-12 rounded-full bg-[#F0EBE0] flex items-center justify-center hover:bg-gray-200 transition"
               >
-                <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-gray-800">
-                  <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.648 0-2.928 1.67-2.928 3.403v1.575h3.913l-.566 3.667h-3.347v7.98h-5.005l.112-.007Z" />
-                </svg>
+                <FaFacebook className="w-6 h-6 text-gray-800" />
               </a>
               {/* Youtube */}
               <a 
@@ -99,9 +108,7 @@ const Contact = () => {
                 aria-label="Visit our YouTube channel"
                 className="w-12 h-12 rounded-full bg-[#F0EBE0] flex items-center justify-center hover:bg-gray-200 transition"
               >
-                <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-gray-800">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                </svg>
+                <FaYoutube className="w-6 h-6 text-gray-800" />
               </a>
             </div>
 

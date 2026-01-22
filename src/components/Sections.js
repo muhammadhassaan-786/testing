@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function Sections() {
@@ -24,8 +25,8 @@ export default function Sections() {
     },
     {
       id: 2,
-      title: 'دارالافتاء',
-      description: 'آپ کے مسائل اور کا حل',
+      title: 'منہج و نظام',
+      description: 'اصلاحی و تربیتی منہج',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 text-gray-800">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-1.804 9-4.023V16.5M12 20.25c-4.97 0-9-1.804-9-4.023V16.5m18 0V9.75c0-2.219-4.03-4.023-9-4.023S3 7.531 3 9.75v10.5m18 0a4.023 4.023 0 0 0-9-4.023m-9 4.023a4.023 4.023 0 0 0 9 4.023" />
@@ -84,28 +85,44 @@ export default function Sections() {
 
         {/* Grid of Sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sections.map((section) => (
-            <div key={section.id} className="w-full bg-[#FAF9F6] rounded-3xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer" dir="rtl" onClick={() => handleNavigation(section.id)}>
-              
-              {/* Top: Icon Section - on the right side for RTL */}
-              <div className="self-end">
-                <div className="bg-[#F0EBE0] w-14 h-14 rounded-full flex items-center justify-center">
-                  {section.icon}
+          {sections.map((section) => {
+            const content = (
+              <div className="w-full bg-[#FAF9F6] rounded-3xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer" dir="rtl">
+                
+                {/* Top: Icon Section - on the right side for RTL */}
+                <div className="self-end">
+                  <div className="bg-[#F0EBE0] w-14 h-14 rounded-full flex items-center justify-center">
+                    {section.icon}
+                  </div>
                 </div>
-              </div>
 
-              {/* Bottom: Text Section - on the left side for RTL */}
-              <div className="self-start text-right">
-                <h2 className="text-2xl font-bold text-[#2d1b0e] mb-2">
-                  {section.title}
-                </h2>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {section.description}
-                </p>
-              </div>
+                {/* Bottom: Text Section - on the left side for RTL */}
+                <div className="self-start text-right">
+                  <h2 className="text-2xl font-bold text-[#2d1b0e] mb-2">
+                    {section.title}
+                  </h2>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {section.description}
+                  </p>
+                </div>
 
-            </div>
-          ))}
+              </div>
+            );
+            
+            if (section.id === 2) {
+              return (
+                <Link key={section.id} href="/about">
+                  {content}
+                </Link>
+              );
+            }
+            
+            return (
+              <div key={section.id} onClick={() => handleNavigation(section.id)}>
+                {content}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
