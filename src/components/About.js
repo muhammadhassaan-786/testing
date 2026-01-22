@@ -17,15 +17,15 @@ export default function About() {
           </h3>
 
           <div className="space-y-6 text-right">
-            <p className="text-lg text-gray-700 leading-relaxed font-serif">
+            <p className="text-lg text-gray-700 leading-relaxed">
               حضرت مفتی سید مختار الدین شاہ صاحب پاکستان کے ممتاز عالم دین اور معروف روحانی پیشوا ہیں۔ آپ شیخ الحدیث مولانا محمد زکریا کاندھلوی صاحب کے خلیفہ مجاز ہیں۔
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed font-serif">
+            <p className="text-lg text-gray-700 leading-relaxed">
               آپ کا تعلق ضلع گنجو کے علاقے کربوغہ شریف کے ایک معزز سادات گھرانے سے ہے۔ آپ نفس تزکیہ و باطنی اصلاح کے حوالے سے منفرد مقام رکھتے ہیں۔
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed font-serif">
+            <p className="text-lg text-gray-700 leading-relaxed">
               آپ نے کربوغہ شریف میں "جامعہ زکریا" جیسی عظیم دینی درسگاہ قائم کی ہے جہاں قرآن و حدیث کی تعلیم دی جاتی ہے۔
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function About() {
           </h3>
 
           <div className="space-y-6 text-right">
-            <p className="text-lg text-gray-700 leading-relaxed font-serif">
+            <p className="text-lg text-gray-700 leading-relaxed">
               (1898ء - 1982ء) بیسویں صدی کے جلیل القدر محدث، عظیم مصنف اور روحانی پیشوا تھے جنہوں نے مدرسہ مظاہر علوم میں تقریباً نصف صدی تک حدیث نبویﷺ کا درس دیا۔ آپ کی کتاب "فضائل اعمال" دنیا بھر میں تبلیغی جماعت کے نصاب کا حصہ ہے۔
             </p>
           </div>

@@ -16,10 +16,10 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { label: 'رابطہ', href: 'contact' },
-    { label: 'تعارف', href: 'about' },
-    { label: 'شعبہ جات', href: 'sections' },
     { label: 'سرورق', href: 'hero' },
+    { label: 'شعبہ جات', href: 'sections' },
+    { label: 'تعارف', href: 'about' },
+    { label: 'رابطہ', href: 'contact' },
   ];
 
   return (

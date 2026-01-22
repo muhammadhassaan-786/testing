@@ -2,12 +2,12 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-white py-20 px-6 font-sans scroll-mt-20" dir="rtl">
+    <div id="contact" className="w-full bg-white py-20 px-6 scroll-mt-20" dir="rtl">
       
       <div className="max-w-6xl mx-auto">
         
         {/* Main Page Heading */}
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-[#2d1b0e] mb-20 font-serif">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-[#2d1b0e] mb-20">
           رابطہ
         </h1>
 
@@ -15,20 +15,20 @@ const Contact = () => {
           
           {/* RIGHT COLUMN: Donation Card - appears first in RTL */}
           <div className="bg-white border border-gray-100 rounded-3xl p-10 shadow-sm">
-            <h2 className="text-3xl font-bold text-right text-[#2d1b0e] mb-10 font-serif">
+            <h2 className="text-3xl font-bold text-right text-[#2d1b0e] mb-10">
               عطیات
             </h2>
 
             <div className="space-y-8">
               {/* Account Title Row */}
               <div className="flex justify-between items-start pb-4 border-b border-gray-100">
-                <span className="text-gray-500 text-sm font-serif">اکاؤنٹ ہولڈر</span>
+                <span className="text-gray-500 text-sm">اکاؤنٹ ہولڈر</span>
                 <span className="text-gray-900 font-semibold text-lg">Muhammad Jafar</span>
               </div>
 
               {/* Bank Name Row */}
               <div className="flex justify-between items-start pb-4 border-b border-gray-100">
-                <span className="text-gray-500 text-sm font-serif">بینک</span>
+                <span className="text-gray-500 text-sm">بینک</span>
                 <span className="text-gray-900 font-semibold text-lg">Meezan Bank, Doaba Branch</span>
               </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
 
               {/* Footer Note */}
-              <p className="text-right text-gray-600 text-sm font-serif pt-4">
+              <p className="text-right text-gray-600 text-sm pt-4">
                 اللہ تعالیٰ آپ کو اس کا بہترین اجر عطا فرمائے
               </p>
             </div>
@@ -59,8 +59,8 @@ const Contact = () => {
                 </svg>
               </div>
               <div className="text-right" dir="rtl">
-                <h3 className="text-[#2d1b0e] font-bold text-lg font-serif mb-1">مرکز خانقاہ دارالایمان والتقویٰ</h3>
-                <p className="text-gray-600 font-serif">کربوغہ شریف، پاکستان</p>
+                <h3 className="text-[#2d1b0e] font-bold text-lg mb-1">مرکز خانقاہ دارالایمان والتقویٰ</h3>
+                <p className="text-gray-600">کربوغہ شریف، پاکستان</p>
               </div>
             </div>
 

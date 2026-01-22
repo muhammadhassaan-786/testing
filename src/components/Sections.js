@@ -96,10 +96,10 @@ export default function Sections() {
 
               {/* Bottom: Text Section - on the left side for RTL */}
               <div className="self-start text-right">
-                <h2 className="text-2xl font-bold text-[#2d1b0e] mb-2 font-serif">
+                <h2 className="text-2xl font-bold text-[#2d1b0e] mb-2">
                   {section.title}
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed font-serif">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {section.description}
                 </p>
               </div>
