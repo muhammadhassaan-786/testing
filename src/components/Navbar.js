@@ -1,18 +1,39 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const handleScroll = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  const handleNavigation = (sectionId) => {
     setIsOpen(false);
+    
+    // If on home page, scroll to section
+    if (pathname === '/' || pathname === '') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // If on another page, navigate to home and then scroll
+      if (sectionId === 'about') {
+        router.push('/about');
+      } else {
+        router.push('/');
+        // Small delay to allow page to load before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 500);
+      }
+    }
   };
 
   const navLinks = [
@@ -26,7 +47,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 w-full bg-white border-b border-gray-200 shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Logo and Title */}
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleScroll('hero')}>
+        <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavigation('hero')}>
           <div className="w-12 h-12 relative">
             <Image 
               src="/logo.jpg" 
@@ -46,7 +67,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={link.label}>
               <button
-                onClick={() => handleScroll(link.href)}
+                onClick={() => handleNavigation(link.href)}
                 className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-base cursor-pointer"
               >
                 {link.label}
@@ -71,7 +92,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={link.label}>
                 <button
-                  onClick={() => handleScroll(link.href)}
+                  onClick={() => handleNavigation(link.href)}
                   className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-base cursor-pointer w-full text-right"
                 >
                   {link.label}
