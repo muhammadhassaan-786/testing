@@ -22,8 +22,11 @@ export default function MovementIntro() {
           <p className="text-lg text-gray-700 text-right leading-relaxed mb-8">
             تحریک ایمان و تقویٰ کا بنیادی ہدف انفرادی و اجتماعی زندگی میں ظاہر اور باطناً پورا دین عمل میں لانا اور پورے عالم پر پورے دین اسلام کو غالب کرنا ہے۔
           </p>
-          <div className="flex justify-center">
-            <p className="text-lg text-gray-800 leading-relaxed font-bold max-w-2xl" style={{ fontFamily: "'Amiri', serif" }}>
+          <div className="flex flex-col items-center justify-center gap-6">
+            <p className="text-3xl md:text-2xl font-bold text-[#2d1b0e] leading-relaxed text-center">
+              يَأَيُّهَا الَّذِينَ آمَنُوا ادْخُلُوا فِي السِّلْمِ كَافَةً وَلَا تَتَّبِعُوا خُطُوتِ الشَّيْطَنِ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ
+            </p>
+            <p className="text-lg text-gray-800 leading-relaxed font-bold max-w-2xl text-center" style={{ fontFamily: "'Amiri', serif" }}>
               "اے ایمان والو! اسلام میں پورے کے پورے داخل ہو جاؤ اور شیطان کے نقش قدم پر نہ چلو یقین جانو وہ تمہارا کھلا دشمن ہے۔" (البقرہ: ۲۰۸)
             </p>
           </div>
