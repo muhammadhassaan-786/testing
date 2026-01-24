@@ -15,7 +15,7 @@ export default function Objectives() {
           {/* First Objective */}
           <div className="rounded-2xl p-8 border border-gray-100">
             <h3 className="text-2xl font-bold text-right text-[#2d1b0e] mb-4">
-              ۱۔ تزکیہ نفس
+              تزکیہ نفس
             </h3>
             <p className="text-gray-700 text-right leading-relaxed">
               تقویٰ، طہارت، اللہ تعالی کے ساتھ شدید محبت، اس کی عظمت و معرفت اور خشیت کے اعلیٰ درجات اور زندگی کے ہر گوشے میں احسانی کیفیت حاصل کرنے کے لیے مسلسل محنت و کوشش کرنا، اور اپنے گردو پیش کو بھی اپنی اصلاح و تربیت اور ایمانی اوصاف و کمالات سے آراستہ ہونے کی جانب توجہ دلانا۔
