@@ -1,4 +1,8 @@
-import { Geist, Geist_Mono, Noto_Naskh_Arabic } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import {Amiri} from "next/font/google";
+import { Cairo } from "next/font/google";
+import { Gulzar } from "next/font/google";
+import { Scheherazade_New } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,10 +17,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const notoNaskhArabic = Noto_Naskh_Arabic({
-  variable: "--font-noto-naskh-arabic",
+const jameelNooriNastaleeq = Gulzar({
+  variable: "--font-jameel-noori-nastaleeq",
   subsets: ["arabic"],
-  weight: ["400", "700"],
+  weight: "400",
+  display: "swap",
+  fallback: ["serif"]
 });
 
 export const metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoNaskhArabic.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jameelNooriNastaleeq.variable} antialiased`}
       >
         <Navbar />
         <main className="w-full flex flex-col min-h-screen">

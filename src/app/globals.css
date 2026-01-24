@@ -8,7 +8,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-arabic: var(--font-noto-naskh-arabic);
+  --font-arabic: var(--font-jameel-noori-nastaleeq);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +18,7 @@
 }
 
 * {
-  font-family: var(--font-noto-naskh-arabic), Arial, Helvetica, sans-serif !important;
+  font-family: var(--font-jameel-noori-nastaleeq), Arial, Helvetica, sans-serif !important;
 }
 
 body {
