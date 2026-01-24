@@ -28,14 +28,7 @@ export default function Hero() {
       </p>
 
       {/* Buttons */}
-      <div className="flex gap-6 items-center justify-center flex-wrap">
-        {/* Primary Button - تعارف */}
-        <Link href="/about">
-          <button className="px-8 py-3 text-white rounded-full font-semibold text-lg transition-colors duration-300">
-            تعارف
-          </button>
-        </Link>
-
+      <div className="flex gap-6 items-center justify-center flex-wrap w-full">
         {/* Secondary Button */}
         <button onClick={() => handleScroll('contact')} className="px-8 py-3 text-black border-2 border-gray-400 rounded-full font-semibold text-lg transition-colors duration-300">
           رابطہ کریں
