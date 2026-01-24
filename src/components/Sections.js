@@ -76,7 +76,7 @@ export default function Sections() {
   ];
 
   return (
-    <section id="sections" className="w-full bg-white py-16 px-6 scroll-mt-20">
+    <section id="sections" className="w-full py-16 px-6 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
@@ -87,11 +87,11 @@ export default function Sections() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section) => {
             const content = (
-              <div className="w-full bg-[#FAF9F6] rounded-3xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer" dir="rtl">
+              <div className="w-full rounded-3xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer" dir="rtl">
                 
                 {/* Top: Icon Section - on the right side for RTL */}
                 <div className="self-end">
-                  <div className="bg-[#F0EBE0] w-14 h-14 rounded-full flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center">
                     {section.icon}
                   </div>
                 </div>

@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       href="https://api.whatsapp.com/send/?phone=923280899651&text&type=phone_number&app_absent=0"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 left-6 z-40 w-14 h-14 bg-[#25d366] hover:bg-[#20ba5a] rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+      className="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
       title="رابطہ کریں"
     >
       <svg

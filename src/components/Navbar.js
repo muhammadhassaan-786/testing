@@ -44,7 +44,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full bg-white border-b border-gray-200 shadow-sm z-50">
+    <nav className="fixed top-0 left-0 right-0 w-full border-b border-gray-200 shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Logo and Title */}
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavigation('hero')}>
@@ -87,7 +87,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-4">
+        <div className="md:hidden border-t border-gray-200 px-4 py-4">
           <ul className="flex flex-col gap-4" dir="rtl">
             {navLinks.map((link) => (
               <li key={link.label}>
