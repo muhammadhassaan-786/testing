@@ -89,7 +89,7 @@ export default function Sections() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section) => {
             const content = (
-              <div className="w-full rounded-3xl shadow-sm border-2 border-gold p-6 flex flex-col justify-between hover:shadow-lg hover:border-gold transition-all cursor-pointer bg-white" dir="rtl">
+              <div className="w-full rounded-3xl shadow-sm border-2 border-gray-200 p-6 flex flex-col justify-between hover:shadow-lg transition-all cursor-pointer bg-white" dir="rtl">
                 
                 {/* Top: Icon Section - on the right side for RTL */}
                 <div className="self-end">
