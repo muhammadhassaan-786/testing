@@ -2,7 +2,7 @@
 
 export default function Objectives() {
   return (
-    <section className="w-full py-16 px-6" dir="rtl">
+    <section className="w-full py-16 px-6 bg-accent-light" dir="rtl">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
           مقاصد
@@ -13,7 +13,7 @@ export default function Objectives() {
 
         <div className="space-y-8">
           {/* First Objective */}
-          <div className="rounded-2xl p-8 border border-gray-100">
+          <div className="rounded-2xl p-8 border border-gray-100 bg-white">
             <h3 className="text-2xl font-bold text-right text-[#2d1b0e] mb-4">
               تزکیہ نفس
             </h3>
@@ -23,7 +23,7 @@ export default function Objectives() {
           </div>
 
           {/* Second Objective */}
-          <div className="rounded-2xl p-8 border border-gray-100">
+          <div className="rounded-2xl p-8 border border-gray-100 bg-white">
             <h3 className="text-2xl font-bold text-right text-[#2d1b0e] mb-4">
               ۲۔ پورے دین پر پورا عمل
             </h3>
@@ -33,7 +33,7 @@ export default function Objectives() {
           </div>
 
           {/* Third Objective */}
-          <div className="rounded-2xl p-8 border border-gray-100">
+          <div className="rounded-2xl p-8 border border-gray-100 bg-white">
             <h3 className="text-2xl font-bold text-right text-[#2d1b0e] mb-4">
               ۳۔ اتحاد امت
             </h3>

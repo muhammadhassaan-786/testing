@@ -4,7 +4,7 @@ export default function AboutContent() {
   return (
     <div className="w-full" dir="rtl">
       {/* Four Principles Section */}
-      <section className="w-full py-16 px-6">
+      <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
             اتحاد و اتفاق کے اصول
@@ -39,7 +39,7 @@ export default function AboutContent() {
       </section>
 
       {/* Eight Things to Do */}
-      <section className="w-full py-16 px-6">
+      <section className="w-full py-16 px-6 bg-accent-light">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
             آٹھ بنیادی باتیں
@@ -68,7 +68,7 @@ export default function AboutContent() {
       </section>
 
       {/* Five Things to Avoid */}
-      <section className="w-full py-16 px-6">
+      <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
             پانچ چیزوں سے پرہیز
@@ -94,7 +94,7 @@ export default function AboutContent() {
       </section>
 
       {/* Three Things for Moderation */}
-      <section className="w-full py-16 px-6">
+      <section className="w-full py-16 px-6 bg-accent-light">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
             تین چیزوں میں اعتدال
@@ -118,7 +118,7 @@ export default function AboutContent() {
       </section>
 
       {/* Methodology Section */}
-      <section className="w-full py-16 px-6">
+      <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-right text-[#2d1b0e] mb-12">
             اصلاحی و تربیتی منہج

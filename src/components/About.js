@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section id="about" className="w-full py-20 px-6 scroll-mt-20" dir="rtl">
+    <section id="about" className="w-full py-20 px-6 scroll-mt-20 bg-accent-light" dir="rtl">
       <div className="max-w-4xl mx-auto">
         
         {/* Main Title */}

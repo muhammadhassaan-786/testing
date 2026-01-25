@@ -15,7 +15,7 @@ export default function Sections() {
   const sections = [
     {
       id: 1,
-      title: 'جامعہ زکریا',
+      title: 'علمی جہات',
       description: 'تعلیم قرآن و حدیث',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 text-gray-800">
@@ -76,7 +76,7 @@ export default function Sections() {
   ];
 
   return (
-    <section id="sections" className="w-full py-16 px-6 scroll-mt-20">
+    <section id="sections" className="w-full py-16 px-6 scroll-mt-20 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
@@ -87,7 +87,7 @@ export default function Sections() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section) => {
             const content = (
-              <div className="w-full rounded-3xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer" dir="rtl">
+              <div className="w-full rounded-3xl shadow-sm border-2 border-gold p-6 flex flex-col justify-between hover:shadow-lg hover:border-gold transition-all cursor-pointer bg-white" dir="rtl">
                 
                 {/* Top: Icon Section - on the right side for RTL */}
                 <div className="self-end">

@@ -2,10 +2,13 @@
 
 :root {
   --foreground: #171717;
+  --accent-light: rgb(243 237 226 / 0.3);
+  --gold: #D4AF37;
 }
 
 @theme inline {
   --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-arabic: var(--font-jameel-noori-nastaleeq);
@@ -23,4 +26,38 @@
 
 body {
   color: var(--foreground);
+  background-color: white;
+}
+
+/* Utility classes for colors */
+@layer utilities {
+  .bg-accent-light {
+    @apply bg-[rgb(243_237_226_/_0.3)];
+  }
+  
+  .border-gold {
+    @apply border-[#D4AF37];
+  }
+  
+  .text-gold {
+    @apply text-[#D4AF37];
+  }
+}
+
+/* Golden underline for all headings */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  padding-bottom: 0.75rem;
+  display: inline-block;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #D4AF37;
+  border-radius: 4px;
 }

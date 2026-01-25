@@ -3,7 +3,7 @@ import { FaWhatsapp, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full py-20 px-6 scroll-mt-20" dir="rtl">
+    <div id="contact" className="w-full py-20 px-6 scroll-mt-20 bg-white" dir="rtl">
       
       <div className="max-w-6xl mx-auto">
         
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className="flex justify-start gap-4 pt-4">
               {/* WhatsApp */}
               <a 
-                href="https://api.whatsapp.com/send/?phone=923280899651&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=923177930224&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Contact us on WhatsApp"

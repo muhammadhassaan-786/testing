@@ -3,8 +3,8 @@
 export default function MovementIntro() {
   return (
     <>
-      <section className="w-full py-20 px-6 scroll-mt-20" dir="rtl">
-        <div className="max-w-4xl mx-auto">
+      <section className="w-full py-20 px-6 scroll-mt-20 bg-accent-light" dir="rtl">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-[#2d1b0e] mb-8">
             تحریک إيمان و تقوی کربوغہ شریف
           </h1>
