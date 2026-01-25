@@ -15,7 +15,7 @@ export default function Sections() {
   const sections = [
     {
       id: 1,
-      title: 'علمی جہات',
+      title: 'جامعہ زکریا',
       description: 'تعلیم قرآن و حدیث',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 text-gray-800">
@@ -79,9 +79,11 @@ export default function Sections() {
     <section id="sections" className="w-full py-16 px-6 scroll-mt-20 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-          شعبہ جات
-        </h2>
+        <div className="flex justify-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold pt-6 text-gray-900">
+            علمی جہات
+          </h2>
+        </div>
 
         {/* Grid of Sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
